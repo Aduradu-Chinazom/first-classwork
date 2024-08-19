@@ -1,0 +1,207 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url(images/flower.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.bg-1{
+    background-image: url(images/flower1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.bg-2{
+    background-image: url(images/flower2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.bg-3{
+    background-image: url(images/flower3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-attachment: fixed;
+}
+.bg-4{
+        background-image: url(images/flower4.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1440px){
+        .container{
+            height: 400px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .overlay{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background: #00000085;
+            color: white;
+            font-size: 1.5rem;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .grid-item{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .grid-item span{
+            padding: 0 20px;
+            font-size: .8rem;
+            color: gray;
+            text-align: center;
+            font-style: italic;
+        }
+        .bg-3{
+            height: 400px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .overlay_2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00000085;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        footer{
+            margin-top: 20px;
+            background-color: #000;
+            color: white;
+            padding: 10px 10px;
+        }
+        .footer{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .footer-grid-items span{
+            font-size: .7rem;
+        }
+        .left{
+            border-right: .5px solid #ddd;
+        }
+        .copy{
+            text-align: center;
+            font-size: .5rem;
+            border-top: .5px dotted #ddd;
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 425px){
+        .container{
+            height: 250px;
+            position: relative;
+        }
+        .overlay{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            background: #00000085;
+            color: white;
+            font-size: 1rem;
+        }
+        .grid-item{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 95%;
+            margin: auto;
+            gap: 10px;
+        }
+        .grid-item span{
+            font-size: 1rem;
+            color: gray;
+            text-align: center;
+            font-style: italic;
+        }
+        .bg-3{
+            height: 250px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .overlay_2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00000085;
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+        footer{
+            margin-top: 20px;
+            background-color: #000;
+            color: white;
+            padding: 10px 10px;
+        }
+        .footer{
+            grid-template-columns: 1fr;
+        }
+        .footer-grid-items span{
+            font-size: .7rem;
+        }
+        .left{
+            border-top: .5px solid #ddd;
+        }
+        .copy{
+            text-align: center;
+            font-size: .5rem;
+            border-top: .5px dotted #ddd;
+            margin-top: 10px;
+        }
+    }

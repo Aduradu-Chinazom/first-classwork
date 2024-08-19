@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    column-count: 4;
+    column-gap: 40px;
+}
+.test{
+    column-count: 4;
+    column-gap: 40px;
+}
+.child{
+    background-image: url(images/flower.jpeg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+ .fix{
+    column-width: 300px;
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: pink;
+ }
+.grid-item{
+    background-color: orange;
+    height: 300px;
+}
+.red{
+    background-color: red;
+    height: 300px;
+}
+.redd{
+    background-color: green;
+}
+.span{
+    scale: 1 2;
+}
+/*.rox::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col{
+    width: 50%;
+    height: 500px;
+    background-color: cadetblue;
+    float: left;
+}
+.green{
+    background-color: green;
+}
+
+
+@media screen and (max-width: 320px){
+    body{
+        background-color: black;
+    }
+}*/
